@@ -4,17 +4,21 @@ import TodoData from "./components/todo/TodoData.jsx";
 import reactLogo from "./assets/react.svg";
 
 const App = () => {
-  const duyNguyen = "Duy Nguyen";
+  const name = "Duy Nguyen";
   const age = 25;
   const data = {
     address: "Viet Nam",
     City: "Ho Chi Minh",
   };
+
+  const addNewTodo = (name) => {
+    alert(`call me for ${name}`);
+  };
   return (
     <div className="todo-container">
       <div className="todo-title"> ToDo list</div>
-      <TodoNew />
-      <TodoData name={duyNguyen} age={age} data={data} />
+      <TodoNew addNewTodo={addNewTodo} />
+      <TodoData name={name} age={age} data={data} />
       <div className="todo-image">
         <img src={reactLogo}></img>
       </div>
