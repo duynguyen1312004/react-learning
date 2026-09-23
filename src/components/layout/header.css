@@ -29,3 +29,8 @@
 .header-menu a:hover {
   color: yellow;
 }
+
+.header-menu a.active {
+  color: red;
+  font-weight: bold;
+}
