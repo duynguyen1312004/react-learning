@@ -1,0 +1,30 @@
+.user-form {
+  width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* mỗi field */
+.user-form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+/* label */
+.user-form span {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* input antd */
+.user-form .ant-input {
+  height: 38px;
+  border-radius: 6px;
+}
